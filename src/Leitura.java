@@ -84,38 +84,47 @@ public class Leitura {
 		int poss;
 		int countpass = 0;
 		System.out.println("Numero de ocorrencias grupos de 2");
-		for(int[] iterate : lpg2){ 											//Iterate per pos group 2x2
-			if(iterate[0] == 0 || iterate[1] == 0) continue; 				//Prevent to check the possibility of the 0 entry
-				for (int posO = 0; posO <= 14; posO++) { 					//Iterate per position 1-15 per line
-					for(poss = 1; poss <= 25; poss++) {	 					// Iterate per possibility 1-25
-						for(int numL = 0; numL<=1663; numL++) { 			//Iterate per line
+		//Iterate per pos group 2x2
+		for(int[] iterate : lpg2){
+		//Prevent to check the possibility of the 0 entry			
+			if(iterate[0] == 0 || iterate[1] == 0) continue; 
+                //Iterate per position 1-15 per line			
+				for (int posO = 0; posO <= 14; posO++) { 					
+					// Iterate per possibility 1-25
+					for(poss = 1; poss <= 25; poss++) {	 					
+						//Iterate per line
+						for(int numL = 0; numL<=1663; numL++) { 			
 							for(int i=0;i<iterate.length; i++){
 								if((line[numL][posO]==iterate[0] 
 								|| line[numL][posO]==iterate[1])) {
-									countOG2++; 							//Count how many times appears one of the 2x2
-									//System.out.println(countOG2+ " ");
+									//Count how many times appears one of the 2x2
+									countOG2++; 							
 									if(countOG2==2){
-										countOG2A++; 						//Aggregate if both of them appear in the same line
-										//System.out.print(countOG2A+ " ");
+										//Aggregate if both of them appear in the same line
+										countOG2A++; 						
 									}
 								}					
 							}
-						countOG2=0; 										//Zeroes the counter of one the 2x2 appears
+						//Zeroes the counter of one the 2x2 appears
+						countOG2=0; 										
 						}
-						countpass++; 										//Counter lines x possibilities
-						if(countpass==375){ 								//Only prints if it is the la
+						//Counter lines x possibilities
+						countpass++; 										
+						//Only prints if it is the la
+						if(countpass==375){ 								
 							System.out.println(iterate[0] + " and "
 							+ iterate[1] + ": " + countOG2A);
 							
 						}
-						countOG2A=0; 										//Zeroes the counter of aggregate
-						//System.out.println(countpass);
+						//Zeroes the counter of aggregate
+						countOG2A=0; 																
 					}
 				
 				}
-			//System.out.println(countpass);
+			//Zeroes x possibilities
 			countpass = 0;
-			if(iterate[0] == 0 || iterate[1] == 0) continue; 				//Prevent to check the possibility of the 0 entry
+			//Prevent to check the possibility of the 0 entry
+			if(iterate[0] == 0 || iterate[1] == 0) continue; 				
 			
 		}
 	}
