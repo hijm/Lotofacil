@@ -15,14 +15,14 @@ public class Input {
 		int num = 0;
 		int lineNum = 0;
 		while(scanner.hasNextInt()) {
-		    while(lineNum <=1663) {
-		    	while(num <=14) {
-		   			line[lineNum][num] = scanner.nextInt();
-		   			num++;
-		   		}
-		   		num = 0;
+			while(lineNum <=1663) {
+		    		while(num <=14) {
+   					line[lineNum][num] = scanner.nextInt();
+	   				num++;
+	   			}
+	   			num = 0;
 				lineNum++;
-		    } 
+			} 
 		}
 	}
 }

@@ -21,11 +21,11 @@ public class CombiNumbers {
 	void printCombinations(int group) {
 		// PRINT THE COMBINATIONS
 		System.out.println("\n\nCombinations (25," + group +")");
-	    for(int[] iterate : lpg2) {
-	            for(int i=0;i<iterate.length; i++) {
-	            	if(iterate[0] == 0 || iterate[1] == 0) continue;
-	            	System.out.print(iterate[i] +" ");    
-				}
+	    	for(int[] iterate : lpg2) {
+	        	for(int i=0;i<iterate.length; i++) {
+	            		if(iterate[0] == 0 || iterate[1] == 0) continue;
+	            		System.out.print(iterate[i] +" ");    
+			}
 			if(iterate[0] == 0 || iterate[1] == 0) continue;
 	        System.out.println();
 	    }
