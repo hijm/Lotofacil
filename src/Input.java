@@ -16,15 +16,11 @@ public class Input {
 		int lineNum = 0;
 		while(scanner.hasNextInt()) {
 		    while(lineNum <=1663) {
-		    	//System.out.print(lineNum+1 + ": ");
 		    	while(num <=14) {
 		   			line[lineNum][num] = scanner.nextInt();
-		   			//System.out.print(line[lineNum][num] + " ");
 		   			num++;
 		   		}
 		   		num = 0;
-				//System.out.print("\n");
-
 				lineNum++;
 		    } 
 		}

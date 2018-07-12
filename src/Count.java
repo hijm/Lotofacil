@@ -7,23 +7,18 @@
 public class Count {
 	void counterIndividual(Input inputFile) {
 		// Count how many times each number occours - 
-		// THIS CODE IS OK - COMMENTING JUST TO JUMP OVER
 		System.out.println("Number of individual occurrences");
 		int countO = 0;
 		for(int poss = 1; poss <= 25; poss++) {
-
 			for(int numL = 0; numL<=1663; numL++) {
 				for (int posO = 0; posO <= 14; posO++) {
 						if(poss==inputFile.line[numL][posO]) {
 							countO++;
-
 						}
-
 					}
 				}
 			System.out.println(poss + ": ---- " + countO);
 			countO = 0;
-
 		}
 	}
 	
@@ -63,18 +58,15 @@ public class Count {
 						if(countpass==375){ 								
 							System.out.println(iterate[0] + " and "
 							+ iterate[1] + ": " + countOG2A);
-							
 						}
 						//Zeroes the counter of aggregate
 						countOG2A=0; 																
 					}
-				
 				}
 			//Zeroes x possibilities
 			countpass = 0;
 			//Prevent to check the possibility of the 0 entry
 			if(iterate[0] == 0 || iterate[1] == 0) continue; 				
-			
 		}
 	}
 }

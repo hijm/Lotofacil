@@ -25,7 +25,7 @@ public class CombiNumbers {
 	            for(int i=0;i<iterate.length; i++) {
 	            	if(iterate[0] == 0 || iterate[1] == 0) continue;
 	            	System.out.print(iterate[i] +" ");    
-	        }
+				}
 			if(iterate[0] == 0 || iterate[1] == 0) continue;
 	        System.out.println();
 	    }
