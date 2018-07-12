@@ -19,7 +19,7 @@ public class CombiNumbers {
 	}
 	
 	void printCombinations(int group) {
-		// THIS CODE IS TO PRINT THE COMBINATIONS
+		// PRINT THE COMBINATIONS
 		System.out.println("\n\nCombinations (25," + group +")");
 	    for(int[] iterate : lpg2) {
 	            for(int i=0;i<iterate.length; i++) {
