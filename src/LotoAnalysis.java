@@ -10,7 +10,7 @@ import org.apache.commons.math3.util.Combinations;
 public class LotoAnalysis {
 	public static int [][] line = new int [1664][15];
 	public static void main(String [] args) {
-	Input inputFile = new Input();
+		Input inputFile = new Input();
 		try {
 			inputFile.readFile();
 		} catch (Exception fnfe) {
